@@ -1,0 +1,47 @@
+.todoForm{
+    padding: 10px;
+}
+
+.todoFormContainers{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.todoFormContainer{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.todoFormContainer label{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top:10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.todoFormContainer textarea{
+    width:95%;
+    margin-left:2.5%;
+    margin-right: 2.5%;
+    height: 70px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.todoForm button{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: white;
+    color:aquamarine;
+    margin-top:10px;
+    margin-bottom: 10px;
+    height:28px;
+    font-size: 17px;
+    border-radius: 10px 10px;
+    border-color: white;
+}
