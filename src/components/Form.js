@@ -1,16 +1,17 @@
 import '../css/Form.css';
+import todoCreate from '../js/todoCreate';
 
-const Form = () =>{
+const Form = ({todoLists,setTodo}) =>{
     return(
-        <form className='todoForm'>
+        <form className='todoForm' onSubmit={(e) =>{e.preventDefault();todoCreate(todoLists,setTodo)}}>
             <div className='todoFormContainers'>
                 <div className='todoFormContainer'>
-                    <label htmlFor='todoAddTitle'>Add Title</label>
-                    <textarea name='todoAddTitle' placeholder='add title to you todo......' required/>
+                    <label htmlFor='todoTitle'>Add Title</label>
+                    <textarea id='todoTitle' name='todoTitle' placeholder='add title to you todo......' maxLength='30' minLength='6' required/>
                 </div>
                 <div className='todoFormContainer'>
-                    <label htmlFor='todoAddContent'>Add Content</label>
-                    <textarea name='todoAddContent' placeholder='add what you want todo.....' required/>
+                    <label htmlFor='todoContent'>Add Content</label>
+                    <textarea id='todoContent' name='todoContent' placeholder='add what you want todo.....' maxLength='50' minLength='10' required/>
                 </div>
             </div>
             <button>Submit Todo</button>
