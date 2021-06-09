@@ -3,7 +3,6 @@ import List from './List';
 
 function Lists({ todoLists, setTodo }) {
   const [activeIndex, setActiveIndex] = useState(null);
-
   return (
     <div className="TodoLists">
       {todoLists

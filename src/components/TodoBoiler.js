@@ -4,7 +4,7 @@ import Form from './Form';
 import Lists from './Lists';
 
 export default function TodoBoiler() {
-  let [todoLists, setTodo] = useState([{ title: '', content: '' }]);
+  let [todoLists, setTodo] = useState([]);
   useEffect(() => {
     let arr = JSON.parse(localStorage.getItem('todoList'));
     setTodo(arr);

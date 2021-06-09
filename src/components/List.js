@@ -17,6 +17,7 @@ function List({ id, value, setTodo, active, activeIndex, setActive }) {
       <p className={`todoContent${active}`}>{value.content}</p>
 
       <button
+        className="todoActionButton"
         id="todoEditButton"
         onClick={(e) => {
           e.preventDefault();
@@ -26,6 +27,7 @@ function List({ id, value, setTodo, active, activeIndex, setActive }) {
       </button>
 
       <button
+        className="todoActionButton"
         id="todoDeleteButton"
         onClick={(e) => {
           e.preventDefault();

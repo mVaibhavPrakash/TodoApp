@@ -16,7 +16,7 @@ const Form = ({ todoLists, setTodo }) => {
         className="todoInput"
         id="todoTitle"
         name="todoTitle"
-        placeholder="add title to you todo......"
+        placeholder="add title for your todo......"
         required
       />
       <label className="formLabel" htmlFor="todoContent">
@@ -26,17 +26,21 @@ const Form = ({ todoLists, setTodo }) => {
         className="todoInput"
         id="todoContent"
         name="todoContent"
-        placeholder="add what you want todo....."
+        placeholder="add details...."
         required
       />
+      <label className="formLabel" htmlFor="todoContent">
+        Set Priority
+      </label>
       <div className="dropdownContent">
-        <br />
         <input type="radio" name="priority" value="normal" defaultChecked />
         Normal
         <br />
-        <input type="radio" name="priority" value="medium" /> Medium
+        <input type="radio" name="priority" value="medium" />
+        Medium
         <br />
-        <input type="radio" name="priority" value="high" /> High
+        <input type="radio" name="priority" value="high" />
+        High
       </div>
       <button id="formButton">Submit Todo</button>
     </form>

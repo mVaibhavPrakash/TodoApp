@@ -1,20 +1,21 @@
 .todoList{
     box-sizing: border-box;
     box-shadow: 0px 0px 0.5px 1px black;
-    border-bottom: 2 px solid black;
     width: 90%;
     margin: auto;
+    margin-bottom: 10px;
 }
 
 .todoTitle{
     font-weight: 600;
     margin:0;
     cursor: pointer;
-    padding: 10px 10px 10px 10px;
+    padding: 5px 10px 10px 10px;
 }
 
 .normal{
     background-color:green;
+    color: white;
 }
 
 .medium{
@@ -23,6 +24,7 @@
 
 .high{
     background-color:red;
+    color: white;
 }
 
 .todoContent{
@@ -36,22 +38,21 @@
     padding: 10px 0px 10px 0px;
 }
 
-#todoDeleteButton{
+.todoActionButton{
     width:42.5%;
     display: inline-block;
-    background-color: red;
     color: white;
-    margin:0 5% 20px 2.5%;
-    padding-bottom: 20px;
     height: 25px;
+    cursor: pointer;
+    font-size: 15px;
 }
 
 #todoEditButton{
-    width:42.5%;
-    display: inline-block;
     background-color: orange;
-    color: white;
-    margin:0 2.5% 20px 5%;
-    height: 25px;
+    margin:10px 2.5% 20px 5%;
 }
 
+#todoDeleteButton{
+    background-color: red;
+    margin:10px 5% 20px 2.5%;
+}
